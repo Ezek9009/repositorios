@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+<codetemplates>
+    <codetemplate abbreviation="df" xml:space="preserve">
+        <code><![CDATA[def ${name_metodo}(${self}${", parameters"}):
+${initialindent editable="false"}${indent editable="false"}"""${Documentation}"""
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}${indent editable="false"}${cursor}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="isinst" xml:space="preserve">
+        <code><![CDATA[isinstance(${object}, ${classinfo})]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="for" xml:space="preserve">
+        <code><![CDATA[for ${i} in list:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}${cursor}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="ife" uuid="python-12" xml:space="preserve">
+        <code><![CDATA[if ${condition}:
+${initialindent editable="false"}${indent editable="false"}${statement}
+${initialindent editable="false"}else:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}${indent editable="false"}${cursor}]]></code>
+        <description><![CDATA[if else Statement]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="elif" xml:space="preserve">
+        <code><![CDATA[elif ${condition}:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}${cursor}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="ifmain" xml:space="preserve">
+        <code><![CDATA[if _name__ == "__main__":
+${initialindent editable="false"}${indent editable="false"}${main()}
+${initialindent editable="false"}${indent editable="false"}${cursor}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="while" xml:space="preserve">
+        <code><![CDATA[while ${True}:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}${indent editable="false"}${cursor}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="prn" uuid="python-15" xml:space="preserve">
+        <code><![CDATA[print ("${cursor}")]]></code>
+        <description><![CDATA[Print statement]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="ifelse" xml:space="preserve">
+        <code><![CDATA[if ${condition}:
+${initialindent editable="false"}${indent editable="false"}${statement}
+${initialindent editable="false"}else:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}${indent editable="false"}${cursor}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="print" xml:space="preserve">
+        <code><![CDATA[print ("${cursor}")]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="metadatos" xml:space="preserve">
+        <code><![CDATA[__author__ = "${Autor}"
+__credits__ = ["${person_1}", "${person_2}", "${person_3}", "${person_n}"]
+__copyright__ = "${Copyright}"
+__license__ = "${Licencia}"
+__version__ = "${Version}"
+__revision__ = "${Revision}"
+__date__ = "${Fecha}"
+__status__ = "${Estado}"
+__maintainer__ = "${Mantenedor}"
+__contact__ = "${Contacto}"
+__email__ = "${Email}"
+${initialindent editable="false"}${cursor}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="ifelif" xml:space="preserve">
+        <code><![CDATA[if ${condition_1}:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}elif ${condition_2}:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}elif ${condition_3}:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}else:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}${indent editable="false"}${cursor}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="try" uuid="python-16" xml:space="preserve">
+        <code><![CDATA[try:
+${initialindent editable="false"}${indent editable="false"}${dangerousCode}
+${initialindent editable="false"}except Exception as e:
+${initialindent editable="false"}${indent editable="false"}print ("Exception: ", e)
+${initialindent editable="false"}${cursor}]]></code>
+        <description><![CDATA[try catch]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="from" xml:space="preserve">
+        <code><![CDATA[from ${packageName} import ${libraryName}
+${initialindent editable="false"}]]></code>
+    </codetemplate>
+    <codetemplate abbreviation="trye" uuid="python-10" xml:space="preserve">
+        <code><![CDATA[try:
+${initialindent editable="false"}${indent editable="false"}${dangerousCode}
+${initialindent editable="false"}except Exception:
+${initialindent editable="false"}${indent editable="false"}print ("${errorMessage}")
+${initialindent editable="false"}else:
+${initialindent editable="false"}${indent editable="false"}${runBlockIfNoExceptionThrown}
+${initialindent editable="false"}${cursor}]]></code>
+        <description><![CDATA[try catch else]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="tryf" uuid="python-11" xml:space="preserve">
+        <code><![CDATA[try:
+${initialindent editable="false"}${indent editable="false"}${dangerousCode}
+${initialindent editable="false"}except Exception as e:
+${initialindent editable="false"}${indent editable="false"}print ("Exception: ", e)
+${initialindent editable="false"}finally:
+${initialindent editable="false"}${indent editable="false"}${codeWillRunRegardlessOfException}
+${cursor}]]></code>
+        <description><![CDATA[try catch finally - the finally block will run regarless whether or not exception occurs]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="if" uuid="python-14" xml:space="preserve">
+        <code><![CDATA[if ${condition}:
+${initialindent editable="false"}${indent editable="false"}${pass}
+${initialindent editable="false"}${indent editable="false"}${cursor}]]></code>
+        <description><![CDATA[if Statement]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="class" xml:space="preserve">
+        <code><![CDATA[class ${ClaseName}(${object}):
+${initialindent editable="false"}${indent editable="false"}"""docstring for ${ClaseName}"""
+${initialindent editable="false"}${indent editable="false"}def __init__(self, ${arg}):
+${initialindent editable="false"}${indent editable="false"}${indent editable="false"}super().__init__(self)
+${initialindent editable="false"}${indent editable="false"}${indent editable="false"}self.arg = ${arg}
+${initialindent editable="false"}${indent editable="false"}${cursor}${indent editable="false"}${cursor}]]></code>
+        <description><![CDATA[clase inicializada]]></description>
+    </codetemplate>
+    <codetemplate abbreviation="forin" uuid="python-8" xml:space="preserve">
+        <code><![CDATA[for ${i} in range(${10}):
+${initialindent editable="false"}${indent editable="false"}print (${i})
+${initialindent editable="false"}${cursor}]]></code>
+        <description><![CDATA[For loop range]]></description>
+    </codetemplate>
+</codetemplates>
